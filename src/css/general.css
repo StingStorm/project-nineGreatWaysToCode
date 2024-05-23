@@ -3,6 +3,7 @@
 
   --primary-text-hex: #fcf9f9;
   --primary-text-rgb: 252, 249, 249;
+  --secondary-text-hex: #1c2225;
 
   --accent-color: #ecd979;
 
@@ -92,5 +93,47 @@ Global
 @media screen and (min-width: 1440px) {
   .container {
     max-width: 1280px;
+  }
+}
+
+.section-padding {
+  padding: 40px 0;
+}
+
+.section-title {
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 1.37;
+  letter-spacing: -0.03em;
+}
+
+.section-text {
+  font-size: 14px;
+  letter-spacing: -0.04em;
+  color: rgba(var(--primary-text-rgb), 0.4);
+}
+
+.brand-text-accent {
+  color: var(--accent-color);
+}
+
+@media screen and (min-width: 768px) {
+  .section-padding {
+    padding: 50px 0;
+  }
+
+  .section-title {
+    font-size: 44px;
+    line-height: 1.45;
+  }
+
+  .section-text {
+    font-size: 16px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .section-padding {
+    padding: 75px 0;
   }
 }
