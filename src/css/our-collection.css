@@ -1,0 +1,62 @@
+.our-collection-title {
+  text-align: center;
+  margin-bottom: 40px;
+}
+.our-collection-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+}
+.our-collection-item-img-container {
+  display: flex;
+  border-radius: 4px;
+  overflow: hidden;
+}
+.our-collection-item-text-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+  padding-top: 18px;
+}
+.our-collection-item-title {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  max-width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.our-collection-item-price {
+  font-size: 14px;
+  line-height: 1;
+  letter-spacing: 0.05em;
+  color: rgba(252, 249, 249, 0.4);
+}
+@media screen and (min-width: 768px) {
+  .our-collection-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .our-collection-item {
+    width: calc((100% - 20px) / 2);
+  }
+  .our-collection-item-title {
+    font-size: 18px;
+  }
+  .our-collection-item-price {
+    font-size: 18px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .our-collection-list {
+    row-gap: 40px;
+  }
+  .our-collection-item {
+    width: calc((100% - 2 * 20px) / 3);
+  }
+}
