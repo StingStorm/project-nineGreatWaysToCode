@@ -1,0 +1,64 @@
+.modal-menu-container {
+  padding-right: 20px;
+  padding-top: 20px;
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 274px;
+  height: 100%;
+  background-color: #ecd979;
+  color: var(--secondary-text-hex);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.address-button-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.mobile-menu-address {
+  border: 1px solid rgba(28, 34, 37, 0.1);
+  border-radius: 15px;
+  padding: 12px 20px;
+  display: flex;
+  justify-content: center;
+}
+.mobile-menu-phone {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.16667;
+  text-transform: uppercase;
+}
+.close-mobile-menu-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: aqua;
+  color: black;
+  border: none;
+}
+.close-mobile-menu-icon {
+  width: 36px;
+  height: 36px;
+}
+.mobile-link-list {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  gap: 20px;
+}
+.mobile-link-item {
+  text-transform: uppercase;
+}
+.modal-menu-bg-container {
+  position: relative;
+  left: -27px;
+  bottom: -51px;
+  width: 340px;
+  height: 302px;
+  background-image: url(../img/ornament-bgrounds/black-bg-ornament.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
