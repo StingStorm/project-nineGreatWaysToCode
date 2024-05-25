@@ -2,7 +2,7 @@
     padding: 40px 0;
     background-image: url(/src/img/your-order/your-order-bground-mob.jpg);
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: center top;
     background-size: cover;
     margin: 0 auto;
     max-width: 375px;}
@@ -137,9 +137,7 @@ margin-left: 10px;}
 .order-product {display: block;
                         border-radius: 4px;
                         width: 704px;
-                        height: 521px;}
-
-}
+                        height: 521px;}}
 
 
 @media screen and (min-width:1280px){
@@ -147,12 +145,23 @@ margin-left: 10px;}
                     padding: 0 50px;}
 .order {padding: 75px 0;
             background-image: url(/src/img/your-order/your-order-bground-desk-sm.jpg);
+            background-size: 1282px;
             max-width: 1280px;}
         @media screen and (min-resolution: 2dppx),(min-resolution: 192dpi) {
                     .order {background-image: url(/src/img/your-order/your-order-bground-desk-sm@2x.jpg)}}
 
+.order-wrap {
+    margin: 0;}
 
+.order-product {
+    width: 588px;
+    height: 521px;}
+
+.is-order {display: flex;
+                flex-direction: row-reverse;
+                gap: 50px;}
 }
+
 
 
 @media screen and (min-width:1440px){
@@ -160,10 +169,13 @@ margin-left: 10px;}
                     padding: 0 100px;}
 .order {padding: 75px 0;
             background-image: url(/src/img/your-order/your-order-bground-lg.jpg);
+            background-size: 1440px;
             max-width: 1440px;}
         @media screen and (min-resolution: 2dppx),(min-resolution: 192dpi) {
                     .order {background-image: url(/src/img/your-order/your-order-bground-lg@2x.jpg)}}
 
+.order-product {
+    width: 524px;}
 
 
 }
