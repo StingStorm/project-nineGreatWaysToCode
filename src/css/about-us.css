@@ -1,8 +1,14 @@
 .about-us-section {
-  background-image: url(/img/ornament-bgrounds/grey-bg-ornament.png);
+  background-image: url('/img/ornament-bgrounds/grey-bg-ornament.png');
   background-size: 459px 408px;
   background-repeat: no-repeat;
-  background-position: top 651px left 125px;
+  background-position: calc(50% + 167px) calc(50% + 316px);
+}
+
+@media (min-resolution: 192dpi) {
+  .about-us-section {
+    background-image: url('/img/ornament-bgrounds/grey-bg-ornament@2x.png');
+  }
 }
 
 .about-us-description {
@@ -36,12 +42,10 @@
     max-width: 704px;
     height: 545px;
   }
-  /* .about-us-section {
-    background-position: bottom -50px right -208px;
-  } */
+
   .about-us-section {
     background-size: 545px 484px;
-    background-position: top 523px left 387px;
+    background-position: calc(50% + 273px) calc(50% + 246px);
   }
 }
 
@@ -63,8 +67,8 @@
     margin: 0;
   }
 
-   .about-us-section {
-      background-position: top 216px left 865px;
+  .about-us-section {
+    background-position: calc(50% + 521px) calc(50% + 115px);
   }
 }
 
@@ -80,7 +84,7 @@
     padding-bottom: 78px;
   }
 
-   .about-us-section {
-      background-position: top 216px left 815px;
+  .about-us-section {
+    background-position: calc(50% + 445px) calc(50% + 110px);
   }
 }
