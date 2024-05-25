@@ -1,14 +1,14 @@
-.revius-title {
-    color: var(--primary-text-hex);
-}
+.revius-block {
+    padding-bottom: 150px;
 
+}
 .revius-list {
     display: flex;
 }
 .revius-item {
     border: 1px solid rgba(252, 249, 249, 0.1);
     border-radius: 4px;
-    padding: 0px 18px 18px 18px;
+    padding: 54px 18px 18px 18px;
     text-align: center;
     position: relative; 
 }
@@ -19,7 +19,6 @@
     line-height: 1.5;
     text-align: center;
     color: var(--primary-text-hex);
-    padding-top: 54px;
     margin-bottom: 8px;
 }
 
@@ -31,14 +30,13 @@
     position: absolute;
     top: -24px;
     left: 50%;
-    transform: translateX(-32px);
+    transform: translateX(-50%);
 }
 
 .revius-text {
-    font-size: 400;
-    font-weight: 400;
     text-align: center;
     color: rgba(252, 249, 249, 0.4);
+    line-height: 1.45;
     
 }
 
@@ -47,11 +45,6 @@
 @media screen and (max-width: 767px) {
     .revius-hide-phone {
         display: none;
-    }
-
-    .revius-item {
-        width: 335px;
-        height: 243px;
     }
 
     .revius-text {
@@ -64,11 +57,6 @@
 @media screen and (min-width: 768px) and (max-width: 1279px) {
     .revius-hide-ipad {
         display: none;
-    }
-
-    .revius-item {
-        width: 336px;
-        height: 286px;
     }
 
     .revius-text {
@@ -86,17 +74,8 @@
         font-size: 16px;
     }
 
-    .revius-item {
-        width: 376px;
-        height: 285px;
-    }
-
     .revius-list {
         column-gap: 26px;
     }
 
-    .revius-hide-phone {
-        display: flex;
-        column-gap: 26px;
-    }
 }
