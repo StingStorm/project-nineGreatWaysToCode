@@ -4,6 +4,13 @@
   background-size: 199px 177px;
   background-position: calc(50% - 216px) 338px;
 }
+@media screen and (min-device-pixel-ratio: 2),
+  screen and (min-resolution: 192dpi),
+  screen and (min-resolution: 2dppx) {
+  .our-collection {
+    background-image: url(/img/ornament-bgrounds/yellow-bg-ornament@2x.png);
+  }
+}
 .our-collection-title {
   text-align: center;
   margin-bottom: 40px;
@@ -44,6 +51,10 @@
   color: rgba(252, 249, 249, 0.4);
 }
 @media screen and (min-width: 768px) {
+  .our-collection {
+    background-size: 338px 300px;
+    background-position: calc(50% - 440px) 271px;
+  }
   .our-collection-list {
     flex-direction: row;
     flex-wrap: wrap;
@@ -59,10 +70,18 @@
   }
 }
 @media screen and (min-width: 1280px) {
+  .our-collection {
+    background-position: calc(50% - 640px) 296px;
+  }
   .our-collection-list {
     row-gap: 40px;
   }
   .our-collection-item {
     width: calc((100% - 2 * 20px) / 3);
+  }
+}
+@media screen and (min-width: 1280px) {
+  .our-collection {
+    background-position: calc(50% - 720px) 306px;
   }
 }
