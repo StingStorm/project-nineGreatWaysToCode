@@ -1,50 +1,72 @@
-header {
-  display: block;
-}
+/* header {
+  display: block; Прибрати. Непотрібний
+} */
+
 .header {
   margin-top: 20px;
 }
+
 .header-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 4px;
-  padding-bottom: 4px;
-  gap: 87px;
+  /* padding-top: 4px;
+  padding-bottom: 4px; ці паддінги закриємо в медіа запиті для мобілки
+  та таблетки, тому що в десктопі висоту хедеру визначим через 
+  паддінги посиланнь */
+  /* gap: 87px;  Зайвий код. Або space-between, або гєп. Ще можна margin-right*/
 }
-.logo-nav-container {
-  display: block;
+
+/* .logo-nav-container {
+  display: block; Прибрати. Непотрібний
   height: auto;
-}
-.nav-link-header,
-.address {
-  display: none;
-}
-.socials-container-header {
+} */
+
+/* .socials-container-header {
   display: flex;
-  gap: 12px;
+  gap: 12px;              Прибрати. Непотрібний
   justify-content: center;
   align-items: center;
+} */
+
+.contacts-container-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+/* .nav-link-header, ховаэмо весь список, не тільки посилання */
+.nav-list-header,
+.address {
+  display: none;
 }
 
 .socials-list-header {
   display: flex;
-  width: 156px;
-  height: 44px;
+  /* width: 156px;
+  height: 44px; Прибрати. Непотрібний */
   gap: 12px;
   justify-content: center;
   align-items: center;
 }
-.socials-list-item-header {
+/* .socials-list-item-header 
+стилізуємо під кнопку посилання, а не ліст айтем  */
+.social-link-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   border: 1px solid rgba(252, 249, 249, 0.1);
   border-radius: 15px;
-  padding: 8px;
+  /* padding: 8px;  центруємо іконки через флекс тому 
+  паддінги не подтрібні + вони трохи стискають самі іконки*/
   width: 44px;
   height: 44px;
   background: rgba(252, 249, 249, 0.1);
-  transition: border 0.25s cubic-bezier(0.4, 0, 0.2, 1);
-}
-.social-link-header {
+  /* transition: border 0.25s cubic-bezier(0.4, 0, 0.2, 1);  
+  У нас транзішн 350ms  */
+  transition: border 350ms cubic-bezier(0.4, 0, 0.2, 1);
+
   fill: #fcf9f9;
 }
 
@@ -53,51 +75,94 @@ header {
   border: none;
   line-height: 0;
   stroke: #ecd979;
+  padding: 0;
+}
+
+.mobile-menu-icon {
+  stroke: #ecd979;
+  width: 36px;
+  height: 24px;
+}
+
+@media screen and (max-width: 1279px) {
+  .header {
+    padding: 4px 0; /* Додаєм паддінги які діють лише на моб та таблетці*/
+  }
 }
 
 @media screen and (min-width: 768px) {
-  .address {
+  /* Додаєм нові розміри для іконки на таблетці */
+  .mobile-menu-icon {
+    width: 44px;
+    height: 30px;
+  }
+
+  /* .address {
     border: 1px solid rgba(252, 249, 249, 0.1);
     border-radius: 15px;
-    padding: 14px 28px;
-    width: 193px;
+    padding: 14px 28px;      Тег адресс з'являється тільки на
+    width: 193px;             десктопі. Переносимо стилі в інший медіа запит
     height: 48px;
-  }
-  .header-container {
-    flex-direction: row;
+  } */
+  /* .header-container {
+    flex-direction: row;  Зайвий стиль. Не побачив ніякого впливу на теблетці
     gap: 440px;
-  }
+  } */
 }
 
 @media screen and (min-width: 1280px) {
-  .nav-link-header {
-    display: flex;
+  /* .nav-link-header {
+    display: flex;  Прибрати. Зайвий
     gap: 25px;
-  }
-  .contacts-container-header {
-    display: flex;
+  } */
+  /* .contacts-container-header {
+    display: flex; виніс за межі медіа запитів
     gap: 20px;
-  }
-  .logo-nav-container {
-    display: flex;
+  } */
+
+  /* .logo-nav-container {
+    display: flex;   Прибрати. Зайвий
     gap: 60px;
     align-items: center;
+  } */
+
+  .nav-header {
+    display: flex; /* вирівнюєм лого та список навігації*/
+    align-items: center;
+  }
+
+  .logo {
+    margin-right: 60px; /* Відштовхуємо список від лого*/
+  }
+
+  .nav-list-header {
+    display: flex; /* Вирівнюємо лішки з посиланнями в середені списку */
+    gap: 25px;
+  }
+
+  .nav-link-header {
+    padding: 13px 0; /* вказуэмо вертикальны паддінги
+    для посиланнь щоб розширити клікабельну область посиланнь
+    та розширити хедер заодно*/
+
+    /* Додати стилі для посиланнь */
   }
 
   .address {
     display: block;
-    color: var(--white-color);
-    font-size: 14px;
-    font-style: normal;
     line-height: 1.42;
     text-transform: uppercase;
   }
+
+  .address-link {
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+
+    /* стилізуємо посилання за номером як кнопку */
+  }
+
   .mobile-menu-btn {
     display: none;
-  }
-}
-
-@media screen and (min-width: 1440px) {
-  .contacts-container-header {
   }
 }
