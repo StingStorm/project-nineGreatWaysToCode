@@ -1,30 +1,27 @@
 .order {
     padding: 40px 0;
-    background-image: url(/src/img/your-order/your-order-bground-mob.jpg);
+    background-image:
+    url(/src/img/your-order/your-order-bground-mob.jpg),
+    url(/src/img/ornament-bgrounds/grey-bg-ornament.png);
     background-repeat: no-repeat;
-    background-position: center top;
+    background-position: center top, left bottom;
     background-size: cover;
     margin: 0 auto;
     max-width: 375px;}
 
 @media  screen and (min-resolution: 2dppx),(min-resolution: 192dpi){
-    .order{background-image: url(/src/img/your-order/your-order-bground-mob@2x.jpg);}}
+    .order{background-image: 
+        url(/src/img/your-order/your-order-bground-mob@2x.jpg),
+        url(/src/img/ornament-bgrounds/grey-bg-ornament@2x.png);}}
 .order-back {}
-
-.container {
-    min-width: 320px;
-    max-width: 375px;
-    padding: 0 20px;
-    margin: 0 auto;}
 
 .order-wrap {}
 
-.order-title {font-family: "Manrope", sans-serif;
+.order-title {
     font-weight: 500;
     font-size: 32px;
     line-height: 1.38;
     letter-spacing: -0.03em;
-    color: #fcf9f9;
     margin-bottom: 40px;}
 
 .accent {color: #ecd979;}
@@ -37,18 +34,14 @@
     padding: 14px 16px;
         width: 335px;
     height: 47px;
+    color: #fcf9f9;
     background-color: transparent;
-color: #fcf9f9;
-font-family: "Manrope", sans-serif;
 font-weight: 400;
-font-size: 14px;
 letter-spacing: -0.02em;
 transition: border 350ms cubic-bezier(0.4, 0, 0.2, 1);}
 
 .form-info::placeholder {
-    font-family: "Manrope", sans-serif;
     font-weight: 400;
-    font-size: 14px;
     letter-spacing: -0.02em;
     color: rgba(252, 249, 249, 0.5);}
 
@@ -62,18 +55,14 @@ transition: border 350ms cubic-bezier(0.4, 0, 0.2, 1);}
     padding: 14px 16px;
             width: 335px;
     height: 196px;
+    color: #fcf9f9;
     background-color: transparent;
-color: #fcf9f9;
-font-family: "Manrope", sans-serif;
 font-weight: 400;
-font-size: 14px;
 letter-spacing: -0.02em;
 transition: border 350ms cubic-bezier(0.4, 0, 0.2, 1);}
 
 .form-comments::placeholder{
-    font-family: "Manrope", sans-serif;
     font-weight: 400;
-    font-size: 14px;
     letter-spacing: -0.02em;
     color: rgba(252, 249, 249, 0.5);}
 
@@ -88,12 +77,10 @@ transition: border 350ms cubic-bezier(0.4, 0, 0.2, 1);}
     min-width: 145px;
     height: 49px;
     text-align: center;
-    font-family: "Manrope", sans-serif;
     font-weight: 600;
-    font-size: 14px;
+    color: #fcf9f9;
     letter-spacing: -0.04em;
     text-transform: uppercase;
-    color: #fcf9f9;
     margin: 0 auto;
     display: block;
     transition: border 350ms cubic-bezier(0.4, 0, 0.2, 1);}
@@ -112,15 +99,14 @@ margin-left: 10px;}
 
 
 @media screen and (min-width: 768px) {
-.container {max-width: 704px;
-                padding: 0 32px;}
 .order {padding: 50px 0;
             background-image: url(/src/img/your-order/your-order-bground-tab.jpg);
             max-width: 768px;}
         @media screen and (min-resolution: 2dppx),(min-resolution: 192dpi) {
                     .order {background-image: url(/src/img/your-order/your-order-bground-tab@2x.jpg);}}
 .order-title {font-size: 44px;
-                    line-height: 1.32;}
+                    line-height: 1.32;
+                    max-width: 542px;}
 .form-info {width: 508px;
                     height: 50px;
                     font-size: 16px;}
@@ -134,15 +120,14 @@ margin-left: 10px;}
                     font-size: 16px;
                     margin: 0;}
 .order-wrap {margin: 100px 0;}
-.order-product {display: block;
-                        border-radius: 4px;
-                        width: 704px;
-                        height: 521px;}}
+.order-product {display: block;}
+.order-product-image{
+    border-radius: 4px;
+    width: 704px;
+}}
 
 
 @media screen and (min-width:1280px){
-.container {max-width: 1180px;
-                    padding: 0 50px;}
 .order {padding: 75px 0;
             background-image: url(/src/img/your-order/your-order-bground-desk-sm.jpg);
             background-size: 1282px;
@@ -150,13 +135,9 @@ margin-left: 10px;}
         @media screen and (min-resolution: 2dppx),(min-resolution: 192dpi) {
                     .order {background-image: url(/src/img/your-order/your-order-bground-desk-sm@2x.jpg)}}
 
-.order-wrap {
-    margin: 0;}
-
-.order-product {
-    width: 588px;
-    height: 521px;}
-
+.order-wrap {margin: 0;}
+.order-title{max-width: 542px;}
+.order-product-image {width: 588px;}
 .is-order {display: flex;
                 flex-direction: row-reverse;
                 gap: 50px;}
@@ -165,17 +146,13 @@ margin-left: 10px;}
 
 
 @media screen and (min-width:1440px){
-.container {max-width: 1240px;
-                    padding: 0 100px;}
 .order {padding: 75px 0;
             background-image: url(/src/img/your-order/your-order-bground-lg.jpg);
             background-size: 1440px;
             max-width: 1440px;}
         @media screen and (min-resolution: 2dppx),(min-resolution: 192dpi) {
                     .order {background-image: url(/src/img/your-order/your-order-bground-lg@2x.jpg)}}
-
-.order-product {
+.order-title{max-width: 666px;}
+.order-product-image {
     width: 524px;}
-
-
 }
