@@ -1,0 +1,40 @@
+<section class="order" id="customer-order">
+<div class="container">
+
+<div class="order-wrap">
+<h2 class="order-title"><span class="accent">Your order </span>is our priority: Personalized approach and quality of service</h2>
+<form name="order-form">
+    <div class="form-field">
+        <input type="text" name="user-name" class="form-info" placeholder="Enter your full name" required pattern="2"/>
+    </div>
+    <div class="form-field">
+        <input type="email" name="user-email" class="form-info" placeholder="Enter your email" required pattern="2"/>
+    </div>
+    <div class="form-field-com">
+        <textarea type="text" name="comments" class="form-comments" placeholder="Comments" required></textarea>
+    </div>
+    <button type="submit" class="order-btn">Send
+        <svg class="order-btn-icon" width="26" height="10">
+            <use href="../src/img/icons.svg#icon-arrow"></use>
+        </svg>
+    </button>
+</form>
+</div>
+
+<picture>
+    <source srcset="/src/img/your-order/your-order-img-tab.jpg 1x, /src/img/your-order/your-order-img-tab@2x.jpg 2x"
+        media="(min-width:768px)" />
+    <source
+        srcset="/src/img/your-order/your-order-img-desk-sm.jpg 1x, /src/img/your-order/your-order-img-desk-sm@2x.jpg 2x"
+        media="(min-width:12800px)" />
+    <source
+        srcset="/src/img/your-order/your-order-img-desk-lg.jpg 1x, /src/img/your-order/your-order-img-desk-lg@2x.jpg 2x"
+        media="(min-width:1440px)" />
+    <img src="/src/img/your-order/your-order-img-tab.jpg" class="order-product" alt="the-company's-product" width="704">
+</picture>
+
+</div>
+</section>
+
+
+

@@ -1,0 +1,169 @@
+.order {
+    padding: 40px 0;
+    background-image: url(/src/img/your-order/your-order-bground-mob.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin: 0 auto;
+    max-width: 375px;}
+
+@media  screen and (min-resolution: 2dppx),(min-resolution: 192dpi){
+    .order{background-image: url(/src/img/your-order/your-order-bground-mob@2x.jpg);}}
+.order-back {}
+
+.container {
+    min-width: 320px;
+    max-width: 375px;
+    padding: 0 20px;
+    margin: 0 auto;}
+
+.order-wrap {}
+
+.order-title {font-family: "Manrope", sans-serif;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 1.38;
+    letter-spacing: -0.03em;
+    color: #fcf9f9;
+    margin-bottom: 40px;}
+
+.accent {color: #ecd979;}
+
+.form-field {margin-bottom: 20px;}
+.form-field-com {margin-bottom: 40px;}
+
+.form-info {border: 1px solid rgba(252, 249, 249, 0.1);
+    border-radius: 15px;
+    padding: 14px 16px;
+        width: 335px;
+    height: 47px;
+    background-color: transparent;
+color: #fcf9f9;
+font-family: "Manrope", sans-serif;
+font-weight: 400;
+font-size: 14px;
+letter-spacing: -0.02em;
+transition: border 350ms cubic-bezier(0.4, 0, 0.2, 1);}
+
+.form-info::placeholder {
+    font-family: "Manrope", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    letter-spacing: -0.02em;
+    color: rgba(252, 249, 249, 0.5);}
+
+.form-info:focus,
+.form-info:hover {
+    border: 1px solid rgba(252, 249, 249, 0.6);}
+
+.form-comments {
+    border: 1px solid rgba(252, 249, 249, 0.1);
+    border-radius: 8px;
+    padding: 14px 16px;
+            width: 335px;
+    height: 196px;
+    background-color: transparent;
+color: #fcf9f9;
+font-family: "Manrope", sans-serif;
+font-weight: 400;
+font-size: 14px;
+letter-spacing: -0.02em;
+transition: border 350ms cubic-bezier(0.4, 0, 0.2, 1);}
+
+.form-comments::placeholder{
+    font-family: "Manrope", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    letter-spacing: -0.02em;
+    color: rgba(252, 249, 249, 0.5);}
+
+.form-comments:focus,
+.form-comments:hover {
+    border: 1px solid rgba(252, 249, 249, 0.6);}
+
+.order-btn {
+    border: 1px solid rgba(252, 249, 249, 0.1);
+    border-radius: 15px;
+    padding: 14px 36px;
+    min-width: 145px;
+    height: 49px;
+    text-align: center;
+    font-family: "Manrope", sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    letter-spacing: -0.04em;
+    text-transform: uppercase;
+    color: #fcf9f9;
+    margin: 0 auto;
+    display: block;
+    transition: border 350ms cubic-bezier(0.4, 0, 0.2, 1);}
+
+.order-btn:focus,
+.order-btn:hover {
+    border: 1px solid #ecd979;
+}
+
+.order-btn-icon {fill: #ecd979;
+margin-left: 10px;}
+
+
+.order-product {
+    display: none;}
+
+
+@media screen and (min-width: 768px) {
+.container {max-width: 704px;
+                padding: 0 32px;}
+.order {padding: 50px 0;
+            background-image: url(/src/img/your-order/your-order-bground-tab.jpg);
+            max-width: 768px;}
+        @media screen and (min-resolution: 2dppx),(min-resolution: 192dpi) {
+                    .order {background-image: url(/src/img/your-order/your-order-bground-tab@2x.jpg);}}
+.order-title {font-size: 44px;
+                    line-height: 1.32;}
+.form-info {width: 508px;
+                    height: 50px;
+                    font-size: 16px;}
+.form-info::placeholder {font-size: 16px;}
+.form-comments {width: 508px;
+                        font-size: 16px;}
+.form-comments::placeholder {font-size: 16px;}
+.order-btn {padding: 14px 39px;
+                    width: 168px;
+                    height: 50px;
+                    font-size: 16px;
+                    margin: 0;}
+.order-wrap {margin: 100px 0;}
+.order-product {display: block;
+                        border-radius: 4px;
+                        width: 704px;
+                        height: 521px;}
+
+}
+
+
+@media screen and (min-width:1280px){
+.container {max-width: 1180px;
+                    padding: 0 50px;}
+.order {padding: 75px 0;
+            background-image: url(/src/img/your-order/your-order-bground-desk-sm.jpg);
+            max-width: 1280px;}
+        @media screen and (min-resolution: 2dppx),(min-resolution: 192dpi) {
+                    .order {background-image: url(/src/img/your-order/your-order-bground-desk-sm@2x.jpg)}}
+
+
+}
+
+
+@media screen and (min-width:1440px){
+.container {max-width: 1240px;
+                    padding: 0 100px;}
+.order {padding: 75px 0;
+            background-image: url(/src/img/your-order/your-order-bground-lg.jpg);
+            max-width: 1440px;}
+        @media screen and (min-resolution: 2dppx),(min-resolution: 192dpi) {
+                    .order {background-image: url(/src/img/your-order/your-order-bground-lg@2x.jpg)}}
+
+
+
+}
