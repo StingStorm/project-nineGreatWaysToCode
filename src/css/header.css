@@ -68,17 +68,19 @@
   .logo {
     margin-right: 60px;
   }
+  .nav-header {
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+    gap: 25px;
+  }
 
   .nav-list-header {
     display: flex;
-    gap: 12px;
-    display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: row;
     gap: 25px;
     padding: 4px 0;
-    margin-right: auto;
   }
   .address-link:hover,
   .address-link:focus {
