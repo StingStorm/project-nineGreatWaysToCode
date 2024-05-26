@@ -1,9 +1,12 @@
 .footer {
-  border-top: 1px solid rgba(252, 249, 249, 0.1);
+  border-top: 1px solid rgba(var(--primary-text-rgb), 0.1);
+  color: var(--primary-text-hex);
   background-image: url(/img/ornament-bgrounds/yellow-bg-ornament.png);
   background-repeat: no-repeat;
   background-size: 452px 401px;
   background-position: 50% calc(50% + 319px);
+  padding-top: 40px;
+  padding-bottom: 280px;
 }
 
 @media screen and (min-resolution: 192dpi) {
@@ -12,35 +15,27 @@
   }
 }
 
-.footer-container {
-  display: flex;
-  flex-direction: column;
-  color: var(--primary-text-hex);
-  gap: 40px;
-  padding-top: 40px;
-  padding-bottom: 280px;
-}
-
 .footer-nav-list {
   display: flex;
-  flex-wrap: wrap;
-  gap: 25px;
 }
 
-.footer-nav-items {
-  width: calc((100% - 40px) / 2);
+@media (max-width: 767px) {
+  .footer-nav-list {
+    width: 280px;
+    height: 61px;
+    flex-direction: column;
+    flex-wrap: wrap;
+    row-gap: 25px;
+    column-gap: 40px;
+  }
+
+  .footer-nav-items {
+    height: calc((100% - 25px) / 2);
+  }
 }
 
-.footer-nav-items-collection {
-  order: 2;
-}
-
-.footer-nav-items-order {
-  order: 1;
-}
-
-.footer-nav-items-testimonials {
-  order: 3;
+.footer-nav-container {
+  margin-bottom: 40px;
 }
 
 .footer-nav-link {
@@ -67,36 +62,19 @@
 @media screen and (min-width: 768px) {
   .footer {
     background-position: calc(50% + 435px) 50%;
-  }
-
-  .footer-container {
-    gap: 80px;
     padding-bottom: 40px;
   }
 
+  .footer-nav-container {
+    margin-bottom: 80px;
+  }
+
   .footer-nav-list {
-    display: flex;
-    flex-wrap: nowrap;
-  }
-
-  .footer-nav-items {
-    width: auto;
-  }
-
-  .footer-nav-items-collection {
-    order: 0;
-  }
-
-  .footer-nav-items-order {
-    order: 0;
-  }
-
-  .footer-nav-items-testimonials {
-    order: 0;
+    column-gap: 25px;
   }
 
   .footer-slogan {
-    width: 478px;
+    width: 521px;
     font-size: 54px;
     line-height: 1.18;
   }
@@ -107,15 +85,15 @@
 @media screen and (min-width: 1280px) {
   .footer {
     background-size: 595px 528px;
-    background-position: calc(50% + 600px) calc(50% - 14px);
+    background-position: calc(50% + 600px) calc(50% + 20px);
   }
 
-  .footer-container {
-    gap: 117px;
+  .footer-nav-container {
+    margin-bottom: 117px;
   }
 
   .footer-slogan {
-    width: 730px;
+    width: 754px;
     font-size: 64px;
     line-height: 1.16;
   }
@@ -125,6 +103,6 @@
 
 @media screen and (min-width: 1440px) {
   .footer {
-    background-position: calc(50% + 521px) calc(50% - 14px);
+    background-position: calc(50% + 521px) calc(50% + 20px);
   }
 }
