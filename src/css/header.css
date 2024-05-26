@@ -4,7 +4,6 @@
 
 .header-container {
   display: flex;
-  justify-content: space-between;
   align-items: center;
 }
 
@@ -16,6 +15,9 @@
   display: flex;
   align-items: center;
   gap: 12px;
+}
+.nav-list-header {
+  margin-right: auto;
 }
 
 .nav-list-header,
@@ -95,14 +97,17 @@
     display: block;
     line-height: 1.42;
     text-transform: uppercase;
+    margin-right: 20px;
   }
 
   .address-link {
+    display: flex;
+    justify-content: center;
     border: 1px solid rgba(252, 249, 249, 0.1);
     border-radius: 15px;
-    padding: 17px 0px;
     min-width: 193px;
     height: 48px;
+    padding: 14px 28px;
   }
 
   .mobile-menu-btn {
