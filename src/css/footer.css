@@ -35,15 +35,11 @@
 @media (max-width: 767px) {
   .footer-nav-list {
     width: 280px;
-    height: 61px;
+    height: 62px;
     flex-direction: column;
     flex-wrap: wrap;
     row-gap: 25px;
     column-gap: 40px;
-  }
-
-  .footer-nav-items {
-    height: calc((100% - 25px) / 2);
   }
 }
 
