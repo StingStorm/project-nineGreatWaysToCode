@@ -18,7 +18,6 @@
   gap: 12px;
 }
 
-.nav-link-header,
 .nav-list-header,
 .address {
   display: none;
@@ -28,7 +27,6 @@
   display: flex;
   gap: 12px;
   justify-content: center;
-  align-items: center;
 }
 
 .social-link-header {
@@ -45,7 +43,6 @@
 }
 
 .mobile-menu-btn {
-  background-color: transparent;
   border: none;
   line-height: 0;
   stroke: #ecd979;
@@ -58,19 +55,13 @@
   height: 24px;
 }
 
-@media screen and (max-width: 1279px) {
-  .header {
-    padding: 4px 0;
-  }
+.social-link-header:hover,
+.social-link-header:focus {
+  border: 1px solid #ecd979;
 }
-
 @media screen and (min-width: 768px) {
   .social-link-header {
-    border: 1px solid rgba(252, 249, 249, 0.1);
-    border-radius: 15px;
     padding: 8px;
-    width: 44px;
-    height: 44px;
   }
 }
 
@@ -92,30 +83,25 @@
     justify-content: center;
     flex-direction: row;
     gap: 25px;
-  }
-
-  .nav-link-header {
     padding: 4px 0;
-    gap: 12px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  }
+  .address-link:hover,
+  .address-link:focus {
+    border: 1px solid #ecd979;
   }
 
   .address {
+    border: none;
     display: block;
     line-height: 1.42;
     text-transform: uppercase;
   }
 
   .address-link {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     border: 1px solid rgba(252, 249, 249, 0.1);
     border-radius: 15px;
-    padding: 14px 28px;
-    width: 193px;
+    padding: 17px 0px;
+    min-width: 193px;
     height: 48px;
   }
 
