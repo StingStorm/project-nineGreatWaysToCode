@@ -10,6 +10,10 @@
 .logo-nav-container {
   height: auto;
 }
+.nav-header {
+  margin-right: auto;
+  display: flex;
+}
 
 .contacts-container-header {
   display: flex;
@@ -25,7 +29,6 @@
 .socials-list-header {
   display: flex;
   gap: 12px;
-  justify-content: center;
 }
 
 .social-link-header {
@@ -71,8 +74,6 @@
   .nav-header {
     margin-right: auto;
     display: flex;
-    align-items: center;
-    gap: 25px;
   }
 
   .nav-list-header {
@@ -81,6 +82,13 @@
     justify-content: center;
     gap: 25px;
     padding: 4px 0;
+  }
+  .nav-link-header {
+    font-size: 14px;
+    line-height: 18px;
+    line-height: 1.21;
+    text-transform: uppercase;
+    color: #fcf9f9;
   }
   .address-link:hover,
   .address-link:focus {
@@ -102,7 +110,7 @@
     border-radius: 15px;
     min-width: 193px;
     height: 48px;
-    padding: 14px 28px;
+    padding: 17px 28px;
   }
 
   .mobile-menu-btn {
