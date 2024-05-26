@@ -79,14 +79,11 @@
   .nav-list-header {
     display: flex;
     align-items: center;
-    justify-content: center;
     gap: 25px;
-    padding: 4px 0;
   }
   .nav-link-header {
     font-size: 14px;
-    line-height: 18px;
-    line-height: 1.21;
+    line-height: 1.29;
     text-transform: uppercase;
     color: #fcf9f9;
   }
@@ -96,7 +93,6 @@
   }
 
   .address {
-    border: none;
     display: block;
     line-height: 1.42;
     text-transform: uppercase;
@@ -106,11 +102,11 @@
   .address-link {
     display: flex;
     justify-content: center;
+    align-items: center;
     border: 1px solid rgba(252, 249, 249, 0.1);
     border-radius: 15px;
     min-width: 193px;
     height: 48px;
-    padding: 17px 28px;
   }
 
   .mobile-menu-btn {
