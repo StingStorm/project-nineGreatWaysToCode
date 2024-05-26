@@ -16,9 +16,6 @@
   align-items: center;
   gap: 12px;
 }
-.nav-list-header {
-  margin-right: auto;
-}
 
 .nav-list-header,
 .address {
@@ -68,11 +65,6 @@
 }
 
 @media screen and (min-width: 1280px) {
-  .nav-header {
-    display: flex;
-    align-items: center;
-  }
-
   .logo {
     margin-right: 60px;
   }
@@ -86,6 +78,7 @@
     flex-direction: row;
     gap: 25px;
     padding: 4px 0;
+    margin-right: auto;
   }
   .address-link:hover,
   .address-link:focus {
