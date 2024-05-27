@@ -1,0 +1,151 @@
+.our-collection {
+  background-image: url(/img/ornament-bgrounds/yellow-bg-ornament.png);
+  background-repeat: no-repeat;
+  background-size: 199px 177px;
+  background-position: calc(50% - 216px) 338px;
+}
+@media screen and (min-device-pixel-ratio: 2),
+  screen and (min-resolution: 192dpi),
+  screen and (min-resolution: 2dppx) {
+  .our-collection {
+    background-image: url(/img/ornament-bgrounds/yellow-bg-ornament@2x.png);
+  }
+}
+.our-collection-title {
+  text-align: center;
+  margin-bottom: 40px;
+}
+.our-collection-list {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+@media screen and (max-width: 767px) {
+  .our-collection-list {
+    flex-direction: column;
+  }
+}
+.flip-card {
+  aspect-ratio: 335 / 430;
+  perspective: 1000px;
+}
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+.our-collection-item-img-container,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+.flip-card-back {
+  background-color: var(--accent-color);
+  color: var(--secondary-text-hex);
+  transform: rotateY(180deg);
+  padding: 50px 30px;
+  text-align: left;
+  font-size: 16px;
+  background-image: url(/img/ornament-bgrounds/grey-bg-ornament.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+  cursor: pointer;
+}
+@media screen and (min-device-pixel-ratio: 2),
+  screen and (min-resolution: 192dpi),
+  screen and (min-resolution: 2dppx) {
+  .flip-card-back {
+    background-image: url(/img/ornament-bgrounds/grey-bg-ornament@2x.png);
+  }
+}
+@media screen and (max-width: 374px) {
+  .flip-card-back {
+    padding: 20px;
+    font-size: 14px;
+  }
+}
+.our-collection-item-img-container {
+  border-radius: 4px;
+  overflow: hidden;
+}
+@media screen and (max-width: 767px) {
+  .first-item-mob {
+    aspect-ratio: 335 / 400;
+  }
+}
+.our-collection-item-text-container {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding-top: 18px;
+}
+.our-collection-item-title {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  max-width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.our-collection-item-price {
+  font-size: 14px;
+  line-height: 1;
+  letter-spacing: 0.05em;
+  color: rgba(252, 249, 249, 0.4);
+}
+@media screen and (min-width: 768px) {
+  .our-collection {
+    background-size: 338px 300px;
+    background-position: calc(50% - 440px) 271px;
+  }
+  .our-collection-list {
+    flex-wrap: wrap;
+  }
+  .our-collection-item {
+    width: calc((100% - 20px) / 2);
+  }
+  .flip-card {
+    aspect-ratio: 342 / 430;
+  }
+  .our-collection-item-title {
+    font-size: 18px;
+  }
+  .our-collection-item-price {
+    font-size: 18px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .our-collection {
+    background-position: calc(50% - 640px) 296px;
+  }
+  .our-collection-list {
+    row-gap: 40px;
+  }
+  .our-collection-item {
+    width: calc((100% - 2 * 20px) / 3);
+  }
+  .flip-card {
+    aspect-ratio: 380 / 430;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .our-collection {
+    background-position: calc(50% - 720px) 306px;
+  }
+  .flip-card {
+    aspect-ratio: 400 / 430;
+  }
+}
