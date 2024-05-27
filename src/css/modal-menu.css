@@ -29,12 +29,7 @@
   }
 
   .mobile-menu-address {
-    border: 1px solid rgba(28, 34, 37, 0.1);
-    border-radius: 15px;
-    padding: 12px 20px;
-    display: flex;
     margin-right: auto;
-    justify-content: center;
   }
 
   .mobile-menu-phone {
@@ -42,6 +37,12 @@
     font-size: 12px;
     line-height: 1.16667;
     text-transform: uppercase;
+    border: 1px solid rgba(28, 34, 37, 0.1);
+    border-radius: 15px;
+    padding: 12px 20px;
+    display: flex;
+    margin-right: auto;
+    justify-content: center;
   }
 
   .close-mobile-menu-button {
