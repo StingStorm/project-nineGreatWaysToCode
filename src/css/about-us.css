@@ -21,7 +21,7 @@
   margin-bottom: 40px;
 }
 
-.about-us-item {
+.about-us-item:not(:last-child) {
   margin-bottom: 20px;
 }
 
