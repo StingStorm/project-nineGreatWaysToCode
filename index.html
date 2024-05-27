@@ -11,6 +11,7 @@
       href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
       rel="stylesheet"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
@@ -21,7 +22,7 @@
 
     
     <script type="module" crossorigin src="/project-nineGreatWaysToCode/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/project-nineGreatWaysToCode/assets/index-7d80f75d.css">
+    <link rel="stylesheet" href="/project-nineGreatWaysToCode/assets/index-b398f159.css">
   </head>
   <body>
     <!-- ====== Header - Людмила Кравчук -- Dev ====== -->
@@ -85,7 +86,11 @@
             </svg>
           </a>
         </li>
-        <button class="mobile-menu-btn">
+        <button
+          class="mobile-menu-btn js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
           <svg class="mobile-menu-icon">
             <use href="../img/icons.svg#icon-burger-menu"></use>
           </svg>
@@ -132,7 +137,11 @@
       </div>
     </div>
 
-    <div class="container-hero-img">
+    <div
+      class="container-hero-img"
+      data-aos="fade-right"
+      data-aos-duration="1500"
+    >
       <picture class="hero-foto-picture">
         <source
           media="(min-width: 1440px)"
@@ -196,7 +205,11 @@
         </li>
       </ul>
     </div>
-    <div class="about-us-photo-block">
+    <div
+      class="about-us-photo-block"
+      data-aos="fade-left"
+      data-aos-duration="1000"
+    >
       <picture>
         <source
           class="about-us-photo"
@@ -575,7 +588,11 @@
       </form>
     </div>
 
-    <picture class="order-product">
+    <picture
+      class="order-product"
+      data-aos="fade-right"
+      data-aos-duration="1000"
+    >
       <source
         srcset="/project-nineGreatWaysToCode/assets/your-order-img-desk-lg-c34245c8.jpg 1x, /project-nineGreatWaysToCode/assets/your-order-img-desk-lg@2x-8970a212.jpg 2x"
         media="(min-width:1440px)"
@@ -697,7 +714,7 @@
     <!-- ============ Backdrop & Modals ============ -->
 
     <!-- ====== Mobile Modal Menu -- Bohdan Haponiuk -- SCRUM ====== -->
-    <div class="modal-menu-container">
+    <div class="modal-menu-container js-menu-container" id="mobile-menu">
   <div class="address-button-container">
     <address class="mobile-menu-address">
       <a class="mobile-menu-phone" href="tel:+380684439426"
@@ -705,7 +722,7 @@
       >
     </address>
 
-    <button type="button" class="close-mobile-menu-button">
+    <button type="button" class="close-mobile-menu-button js-close-menu">
       <svg class="close-mobile-menu-icon">
         <use href="/project-nineGreatWaysToCode/assets/icons-80852323.svg#icon-close-btn"></use>
       </svg>
@@ -731,27 +748,17 @@
 </div>
 
 
+    <!-- ============= JavaScript ============= -->
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
     
-
-    <!-- ====== Footer script ====== -->
-    <script>
-      document.addEventListener('DOMContentLoaded', function () {
-        var observer = new IntersectionObserver(function (entries) {
-          entries.forEach(function (entry) {
-            if (entry.isIntersecting) {
-              entry.target.classList.add('visible');
-            } else {
-              entry.target.classList.remove('visible');
-            }
-          });
-        });
-
-        document
-          .querySelectorAll('.animate-on-scroll')
-          .forEach(function (element) {
-            observer.observe(element);
-          });
-      });
-    </script>
+    
+    
   </body>
 </html>
