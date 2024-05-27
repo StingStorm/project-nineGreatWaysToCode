@@ -80,10 +80,11 @@
     display: flex;
     align-items: center;
     gap: 25px;
-    padding: 17px auto;
+    padding-top: 17px;
+    padding-bottom: 17px;
   }
-  .nav-link-header.current:hover,
-  .nav-link-header.current:focus {
+  .nav-link-header:hover,
+  .nav-link-header:focus {
     color: #ecd979;
   }
   .nav-link-header {
