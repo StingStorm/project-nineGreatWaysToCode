@@ -1,0 +1,79 @@
+<section class="order section-padding">
+  <div class="order-bground"></div>
+  <div class="container is-order">
+    <div class="order-wrap">
+      <h2 class="order-title section-title" id="customer-order">
+        <span class="brand-text-accent">Your order </span>is our priority:
+        Personalized approach and quality of service
+      </h2>
+
+      <form name="order-form">
+        <label class="form-field">
+          <input
+            type="text"
+            name="user-name"
+            class="form-info"
+            placeholder="Enter your full name"
+            required
+            autocapitalize="words"
+            minlength="2"
+            pattern="[a-zA-Z0-9]+"
+          />
+        </label>
+        <label class="form-field">
+          <input
+            type="email"
+            name="user-email"
+            class="form-info"
+            placeholder="Enter your email"
+            required
+          />
+        </label>
+        <label class="form-field-com">
+          <textarea
+            name="comments"
+            class="form-info form-comments"
+            placeholder="Comments"
+            required
+          ></textarea>
+        </label>
+        <button type="submit" class="order-btn main-btn">
+          Send
+          <svg class="order-btn-icon" width="26" height="10">
+            <use href="/img/icons.svg#icon-arrow"></use>
+          </svg>
+        </button>
+      </form>
+    </div>
+
+    <picture class="order-product">
+      <source
+        srcset="
+          /img/your-order/your-order-img-desk-lg.jpg    1x,
+          /img/your-order/your-order-img-desk-lg@2x.jpg 2x
+        "
+        media="(min-width:1440px)"
+      />
+      <source
+        srcset="
+          /img/your-order/your-order-img-desk-sm.jpg    1x,
+          /img/your-order/your-order-img-desk-sm@2x.jpg 2x
+        "
+        media="(min-width:1280px)"
+      />
+      <source
+        srcset="
+          /img/your-order/your-order-img-tab.jpg    1x,
+          /img/your-order/your-order-img-tab@2x.jpg 2x
+        "
+        media="(min-width:768px)"
+      />
+
+      <img
+        src="/img/your-order/your-order-img-tab.jpg"
+        class="order-product-image"
+        alt="the-company's-product"
+      />
+    </picture>
+  </div>
+</section>
