@@ -22,9 +22,11 @@
 }
 
 .form-field {
+  display: block;
   margin-bottom: 20px;
 }
 .form-field-com {
+  display: block;
   margin-bottom: 40px;
 }
 

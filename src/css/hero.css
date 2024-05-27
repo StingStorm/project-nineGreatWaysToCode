@@ -34,6 +34,12 @@ Hero Mobile-767
 
 .hero-btn-icon {
   fill: var(--accent-color);
+  transform: rotate(-30deg);
+  transition: transform var(--primary-transition);
+}
+
+.hero-btn:hover .hero-btn-icon {
+  transform: rotate(90deg);
 }
 
 .container-hero-img {
