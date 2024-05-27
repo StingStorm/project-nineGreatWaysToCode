@@ -21,14 +21,14 @@
 
     
     <script type="module" crossorigin src="/project-nineGreatWaysToCode/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/project-nineGreatWaysToCode/assets/index-c024380e.css">
+    <link rel="stylesheet" href="/project-nineGreatWaysToCode/assets/index-c0f7b68f.css">
   </head>
   <body>
     <!-- ====== Header - Людмила Кравчук -- Dev ====== -->
     <header class="header">
   <div class="header-container container">
     <nav class="nav-header">
-      <a href="/index.html" class="logo">
+      <a href="./index.html" class="logo">
         <img src="/project-nineGreatWaysToCode/assets/logo-d9917444.svg" width="44" height="39" alt="site logo" />
       </a>
       <ul class="nav-list-header">
@@ -87,7 +87,7 @@
         </li>
         <button class="mobile-menu-btn">
           <svg class="mobile-menu-icon">
-            <use href="/project-nineGreatWaysToCode/assets/icons-80852323.svg#icon-burger-menu"></use>
+            <use href="../img/icons.svg#icon-burger-menu"></use>
           </svg>
         </button>
       </ul>
@@ -112,9 +112,8 @@
         <div class="box-hero-btn">
           <a class="main-btn hero-btn" href="#customer-order">
             Order
-
-            <svg class="hero-btn-icon" width="24" height="17">
-              <use href="/project-nineGreatWaysToCode/assets/icons-80852323.svg#icon-main-btn-arrow"></use>
+            <svg class="hero-btn-icon" width="26" height="10">
+              <use href="../img/icons.svg#icon-arrow"></use>
             </svg>
           </a>
         </div>
@@ -528,92 +527,139 @@
 
 
       <!-- ====== Your Order -- Julia Solomakha -- Dev ====== -->
-      <section class="order section-padding" id="customer-order">
-    <div class="order-bground"></div>
-<div class="container is-order">
+      <section class="order section-padding">
+  <div class="order-bground"></div>
+  <div class="container is-order">
+    <div class="order-wrap">
+      <h2 class="order-title section-title" id="customer-order">
+        <span class="brand-text-accent">Your order </span>is our priority:
+        Personalized approach and quality of service
+      </h2>
 
-<div class="order-wrap">
-<h2 class="order-title section-title">
-    <span class="brand-text-accent">Your order </span>is our priority: Personalized approach and quality of service</h2>
-
-    <form name="order-form">
-        <div class="form-field">
-            <input type="text"
+      <form name="order-form">
+        <label class="form-field">
+          <input
+            type="text"
             name="user-name"
             class="form-info"
             placeholder="Enter your full name"
             required
             autocapitalize="words"
             minlength="2"
-            pattern="[a-zA-Z0-9]+"/>
-        </div>
-        <div class="form-field">
-            <input type="email"
+            pattern="[a-zA-Z0-9]+"
+          />
+        </label>
+        <label class="form-field">
+          <input
+            type="email"
             name="user-email"
             class="form-info"
             placeholder="Enter your email"
-            required/>
-        </div>
-        <div class="form-field-com">
-            <textarea
+            required
+          />
+        </label>
+        <label class="form-field-com">
+          <textarea
             name="comments"
             class="form-info form-comments"
             placeholder="Comments"
-            required></textarea>
-        </div>
-    <button type="submit" class="order-btn main-btn">Send
-        <svg class="order-btn-icon" width="26" height="10">
+            required
+          ></textarea>
+        </label>
+        <button type="submit" class="order-btn main-btn">
+          Send
+          <svg class="order-btn-icon" width="26" height="10">
             <use href="/project-nineGreatWaysToCode/assets/icons-80852323.svg#icon-arrow"></use>
-        </svg>
-    </button>
-</form>
-</div>
+          </svg>
+        </button>
+      </form>
+    </div>
 
-<picture class="order-product">
-    <source srcset="/project-nineGreatWaysToCode/assets/your-order-img-desk-lg-c34245c8.jpg 1x, /project-nineGreatWaysToCode/assets/your-order-img-desk-lg@2x-8970a212.jpg 2x" media="(min-width:1440px)" >
-    <source srcset="/project-nineGreatWaysToCode/assets/your-order-img-desk-sm-f231b417.jpg 1x, /project-nineGreatWaysToCode/assets/your-order-img-desk-sm@2x-843b5142.jpg 2x" media="(min-width:1280px)" >
-    <source srcset="/project-nineGreatWaysToCode/assets/your-order-img-tab-8dbdd4f9.jpg 1x, /project-nineGreatWaysToCode/assets/your-order-img-tab@2x-471e420a.jpg 2x" media="(min-width:768px)" >
+    <picture class="order-product">
+      <source
+        srcset="/project-nineGreatWaysToCode/assets/your-order-img-desk-lg-c34245c8.jpg 1x, /project-nineGreatWaysToCode/assets/your-order-img-desk-lg@2x-8970a212.jpg 2x"
+        media="(min-width:1440px)"
+      />
+      <source
+        srcset="/project-nineGreatWaysToCode/assets/your-order-img-desk-sm-f231b417.jpg 1x, /project-nineGreatWaysToCode/assets/your-order-img-desk-sm@2x-843b5142.jpg 2x"
+        media="(min-width:1280px)"
+      />
+      <source
+        srcset="/project-nineGreatWaysToCode/assets/your-order-img-tab-8dbdd4f9.jpg 1x, /project-nineGreatWaysToCode/assets/your-order-img-tab@2x-471e420a.jpg 2x"
+        media="(min-width:768px)"
+      />
 
-    <img src="/img/your-order/your-order-tab.jpg"
-    class="order-product-image" 
-    alt="the-company's-product" />
-</picture>
-</div>
+      <img
+        src="/project-nineGreatWaysToCode/assets/your-order-img-tab-8dbdd4f9.jpg"
+        class="order-product-image"
+        alt="the-company's-product"
+      />
+    </picture>
+  </div>
 </section>
-
-
-
 
 
       <!-- ====== Testimonials -- Alina Lanovetska -- Dev ====== -->
-      <section class="revius-block">
-    <div class="container">
+      <section class="revius-block" id="testimonials">
+  <div class="container">
     <h2 class="revius-title section-title">Testimonials</h2>
     <ul class="revius-list">
-        <li class="revius-item">
-            <img class="revius-foto" 
-                srcset="/project-nineGreatWaysToCode/assets/customer-maria@2x-f6602b84.png 2x"
-                src="/project-nineGreatWaysToCode/assets/customer-maria-5a1ae234.png" alt="Maria foto" width="64" height="64">
-            <h3 class="revius-item-title">Maria Tkachuk</h3>
-            <p class="revius-text">I was pleasantly surprised by the variety of embroidery offered by Vyshyvanka Vibes. They have models for every taste - from classic to modern. I bought an embroidered dress to celebrate a special occasion and received impeccable service and refinement in every detail.</p>
-        </li>
-        <li class="revius-item revius-hide-phone">
-            <img class="revius-foto" 
-                srcset="/project-nineGreatWaysToCode/assets/customer-sergey@2x-5139c809.png 2x"
-                src="data:image/png;base64,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" alt="Sergey foto" width="64" height="64">
-            <h3 class="revius-item-title">Sergey Rybachok</h3>
-            <p class="revius-text">Vyshyvanka Vibes exceeds all my expectations! Their vyshyvanka are simply masterpieces! I fell in love with the quality of the materials and the skill of the artisans behind each product. This is my favorite embroidery shop where I always find something special and unique.</p>
-        </li>
-        <li class="revius-item revius-hide-phone revius-hide-ipad">
-            <img class="revius-foto" 
-                srcset="/project-nineGreatWaysToCode/assets/customer-natalia@2x-cde6e7bb.png 2x"
-                src="/project-nineGreatWaysToCode/assets/customer-natalia-67f1f491.png" alt="Natalia foto" width="64" height="64">
-            <h3 class="revius-item-title">Natalia Chatuk</h3>
-            <p class="revius-text">Vyshyvanka Vibes is a real find for everyone who appreciates Ukrainian culture. Their embroidery reflects the spirit and traditions of our people. I not only buy embroidered shirts for myself, but also give them to my friends abroad as a symbol of our beauty and national pride. </p>
-        </li>
+      <li class="revius-item">
+        <img
+          class="revius-foto"
+          srcset="/project-nineGreatWaysToCode/assets/customer-maria@2x-f6602b84.png 2x"
+          src="/project-nineGreatWaysToCode/assets/customer-maria-5a1ae234.png"
+          alt="Maria foto"
+          width="64"
+          height="64"
+        />
+        <h3 class="revius-item-title">Maria Tkachuk</h3>
+        <p class="revius-text">
+          I was pleasantly surprised by the variety of embroidery offered by
+          Vyshyvanka Vibes. They have models for every taste - from classic to
+          modern. I bought an embroidered dress to celebrate a special occasion
+          and received impeccable service and refinement in every detail.
+        </p>
+      </li>
+      <li class="revius-item revius-hide-phone">
+        <img
+          class="revius-foto"
+          srcset="/project-nineGreatWaysToCode/assets/customer-sergey@2x-5139c809.png 2x"
+          src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEgAAABICAMAAABiM0N1AAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAJcEhZcwAACxMAAAsTAQCanBgAAALoUExURUdwTFdaYYmJiOrm1Q4TIdjY0dDJs2JiYRITIyYmJkM+P52en/3+/fb27pydnpiYmMnGvO3m0DA0OsbGwf7//wwQFw4VHaCgo5eXmerp45GUlmVubURLUPv8/ZWWlPz9/JKZoR0hJ1RZXMrCrj5BSMS/sv7+/v7+/g4SFw0UGhMYHvf39nx6fFthY4uTnV1eYObk2OHf0Kyrnf7+/g0RFQsOEhEYIPz8/fn69fr8/FxeZPz++8jAroqbrOPex0VGR4yLf/Tv3M7U3Pr06/n57HN4c3+FfA0a/////wwQFhMaIvz//xEXIf7//KeoqRAWHqmqrA8SGP3//iEnMxgeKK2trRUcJSQrOP7++g4UG6OkpRshK6WmqP///qGio5+goS0yP7Cwr7KztMDAv0VDRx0kMLe3tuXi0vz+/bq5uoqLjlRfXyguPGdwcP399PPz6cPDxNjSwPz57Z2en/z8+Pr58lliY/799mJbXdPMuJSVmJqcm62usbGxsry8vNLU1Mi/qy40Q93c1e/s4d3j6rW1tczGscfEuoN/eDY7RcfJxX+DhFRTV2djZQoNEtvZz/n69+nt8OHf2kpLUtjZ2ffz43t8fl1oZ+Pdyevn3+fn2oaHgO/q142Mgz9FUU1aXOXk4GNqam5xbu/y9jk2Oc3IvcC8q19hYubm5t7Yxc7NwsG9s9TTy+fw95eUibqgk7Oyp62om6Skn4KAfqCdmdPAs3Rta826r7y5p/v06tDPxrq0o5GRh9fVx5qak1ZLSnplYY6Vk+7r6fPz8G1oaMzO0LbBzqGgkI56c6ejl8Gnmzg+Sra0sSQmLIeDhdvf4MuypXt7cuni2fjq12xcWsbKznl0dn+QoXB4dZ+uvJmFfqaUjYVybbGwnZWbnpmdp/P3+ay3u8C0qYa1jnZwb97o8cPP3jMvL7CViaSLhHR2e9bc4JSls9Lc53N+ifrt4HiGlombq4GhheLYvY6CfbjAxZi5mMTEsFZopNgAAABHdFJOUwD+Jv4GHv8BAwL94e+CpWBl/BqS4Izw8JNlddWAkYRx0Sdk4OVE0LDgbdlCRrLhmqHg6MCyR8Kh0KHgwKGy4MHgkeDQobLg9ucvJgAAC+lJREFUWMO9mHdUWtkWxsfkqmAmbTIlmZLpvc/rvb+lKKCIgsIAKsoFFQQuFhAFC2IL2LtRY9dYorG3WGJviem998lkksz8+/YBY8poJplZ6+0FC5Ysf3zfd/Y+93Keeeb/UfbWIttb3v0iDJlMJqEik8jw/uewQIY92XbLa++/97wj1PPvvb92iy0Z/fVpxZA/fs2CuFcMBgN//g8fk55Glr09yXbts47LFB721w22TxgXBEu2YJyXATmzN97e+A9b0hOwUL6vL6vGYg7fqLu98csNpJ/MCrn6lePyxZbFEtSs27dz62u/WkWy/4m1Iq0gB2zh0k42IywrVxST0PTVhseGDnpeWwHjiDs7M6iOzs5EoTw9abzgxNrHaIJ8frcSx5Hq7OwMqgh2p9wUPTXfEPtv0ko5ga/fM1YGUXGGI87OUoQV1pq6+oyFin+tQALOFzKcwXg0GRw3Z/oGRJtx+IxBzcqSdlbU9zbPr5aqvli2O4GzVpRPfRTEwM3VapuU1JZdgwSYw6VZWVmGClPTvCjMXLJpGU2Q85bVIpGK+ggIx6uzU4ZTw1PPN+wz4844W1FYGJGwr9ZYI1Wld21ZRhLZVrRaFJM3ZMYfNAYCQ1IyhOXl5cKUo01DYI+dVdNrUnRWyhWyvKFnbR8lgaAvRaJckWxwyPyAJmQmum24zXinTSjsP94DJLZ0dV1Fp6I7AkAqxp8eaQLgbMgV5cpzZVBmWJ6vkUVnVEMVde27d+9uPypMSR3uU+E4VZrXnVtY9INCCvnjrz88LDCnb9fURBjkhbGxJSWDBButNYrakVFxdm6ufXd7+7HUDGFKWzrBYBBSwwl5X4eCCl+HP2wOBG0yyGvkhghRbGx6+r5YFZDYCIebzyJK+1zj8fAMoVDYzHak4mGrOyobemRsXKUiHB/ucJKtwSDPrTHY5YpEMeklJfmyMDYx1Kkym6vPtoOzubnLC8BxcDCyYU7Y+TVZsUYRQchkhONDksikDQYdKNIByGSKKSmJyR8cksXmdY7wJW3nw8PvHBtvNoKe8vIiHEDU2Hyp2dgVxpbJ2I5ha++DwNnbBp2dPKIyQpRrMpnSY+pjZqvTBvM6QyRXhRmTiZeEC/3ll8odwsvFOAMHRSaCKPpBJc0XEY5hq7H7INK7EREGOzvdWXl+nqjXlF7fFRO3c2da3s1Bv5LWlrLUhWMTE0cXjl0e6x9kwEKGierZ7IZKlTS318yQFr67lJI96c92ULrKbrmsM6+rtj6hwlSStnNH7E1FTG1749hY49zExJWjE5cv7yJgN3Gm5qez2aOV0jCRCYE2kclLEb2t0xkMOh2AVLFdFbUJCbUjmXE7Bm92qhKOHj3WONHY2Hh8bG5uIN0MzYVT2QSVGO2QEiopFVfU/J1EvhfRqg4dlJ3dWRHBlnUlVNRV1vkduJaWt79TkdA/MDEBoCsDY41X+s1oa3N2/PprXDXaLcVha6FmdQ8/t+jNnrT+RIfB0KEz6EQyWT7o6eiorAuJjsvbfzO2dWFg4XLj0bGxhYGB4y1UKmQEeVNxaXMlASBnImG+6q1FSWTS1obR3vwTo93jzaPjTU1+tRV1HVNJ0bMlhftFIcevXDl+Z2BgoP/45YEia7vDwDGIpmYCBOGq1qrQz62KYCP6z3xBgqih6ETR+bKCgoLWhIqEuqmkzOiYwv379vUvXBkzDoc79B8bu6S0zjNb0UmoGopUYVKForesqurTJdArZcbmuvmGpqKenqKW7GSfpMzMkWgArc7qjDnfZmzrL592GHagTLdY9zqp3KCQjo+rVDWGjtGqqqpXrNbsSdh/Wwqa6vpoTX27du3qk5wUR6elxc3OlpSUqMwlDpcuTVOYgnKmpz8zBUebFa6KMKiI5mZCEXFivqy0yuaPiyAyluTnl5QZl5aWdiFuNro+KbN6544LmZnVmbNDp0/PBpRRPD0pLi4c5rR7dNqOHTvS0g0RKqJpnJCK7Brms0ttSjGLNwCJ7969ezFuaChtJ/RzdWY1vF64kZmemXZ6x+CQoveSm4sLhULhuLMST8XFxV3rOgHj0dujkhba9ZQGh4YGW0HPkLEj12/duuVTaEo4c+RA3I0bcRcuXLhxIDomzRnft3v/zf1n3bzoLkwOhxUkSDw1ciDKp68oRpVv7DI19eQEBgbmBGOWuYWMrl+/dehbTeH+BNdvT43sPXPkyJG7SVN1XSpcKs9VKDoVGXS6JxMEBekTM06qe/ZIkgtou0oPBweGBgZuDywFRWSrtc8OHfr2mz6RotdHfWpkZO+R64eUtb1yeSwRW5vFZrBPB7uAIn8AJU5O2iS3JCcnH4YqDQ3MKc0BZ68sZfQGAmn2ZdX7XYO0L168eOZMUm1FR1e6qb4a8j5T7IkEubMEgsni4tDDZWXBlsophWdoDoCsY0vG/nILKaoYn6HBqkTv3bv3zPfffz9a5HMgOvMapFtc7M8BPeBMr5+cLA4FQ6jQSyhUzqck0mJGm8DNSc3osbN2+enVI6fUp06eO/edccbHLylpZCT6zGSiuz8yJtDrBfAsBjuB260FrO3bX13sI3tsw8W9d5WjuohceWVFjDjbxuYbABW0xoujxOKokG+K9Sx3MBYUFCQQBOkF+mCNGvLOPozM5YRu3/7W4vSTSbY3Lvr2NEd0j/cURNXvKRawcs6d26OZEovFAfEBUTaTVhArCB4C0JTIb+1r5cMUKDUaYO5ZtbSNYP+crWvWdd9pSb6q9jkoTEwM/O47jUdA/NRUfHxAZLFegEDuyB3SxBKkpKamth3MbpmZkUgk6jXY4jaCQhppbetuLihILrMpvSqRJCfv4QPH19c3PkB8MlEfxHL351jWDaFY7kIAhS/V59j9rfZd15yMtqKCAuOwMCNZ6c3TuEZF+VkqJESi1wcBh8NkQuKAYgW5T6vVEsnMTPZBqPNtn5DugzCbyWJhVYvxYJUwRaJp5XprQ0KAAZV0IFivZ4EeTyYMCUK5+7OYkkhXV1euN1+pUas/w5ZA4O1VYUpxirFoZjilTK3h+fhoxVY5IUkhk/og4DApFCag/AHlz5wO9vWNROVKo9HWY0tXSOjt597JEIY3NBwczlbzudp4yFhsMRcSEhmkh39leqJxQygORMUp9Y30QAWqXlr1wG0bkjSZmGoMF6ZKlDwPrSVkMYCi/EL4AoE7B/YjLy8XTyuKyZnO1kZ6gDlXGpe3GXvg2m+RJLRJmS5PndF4e3j4aH1BU0BAFJRSwAIO3cvLiQ57kqclKs89WsSh0bjea1YtJWS9+GOvpmRksDKyJRqahw/UVLzW1Rd1JJfjzwSOm5uTFx32SYqFJEEgGgKtx0gP32iRsL+VT6ZkS9RKbxp8mSWBAJgQMY1j5bg5OdFdXNBWCaQMrcUXCMIevrFFkt50CG9RK/k8mqtHZCQyB94gKC3H08sLgZAkC8jT01Ng8YWSxn58E4m9Bb543lwaCtvS1FDxWi3LBcQ4IZDbPRDTnQuuvL15L2M/utNG5jarlTyet0VRpBaVrzaSxnV3sSTkBrKWQMw9wOHxtmLL3bGTMWwdOANJEJKHVuuDQnf1PsmBxaK40JEkuuVqgq5OV7nePP46bBmQPTKHvcHnAceSdiRaOwBJ3D1BkTUl62UJSBQbLk/5xnKcxbbE1oEihEKiLCBasouTJSKUuBMdmaMDTcjlgZ4VfpBaNG0Fc1aWpQVo3KsUOihyshZc4IAFTw5/M4at/NOPDDm9/BIPEgcajQYgLi8bxpVOt3bStm1eSA7di/7iyyv5WgwcSKvWKPl8pAvs0bx3SWBcQQUFMEgT6iUvr9++iZFIj/uhbY/WDlu/BjioEWg0vjKZ4oUsgTl4bAMQ3evFDzEM+4kTCXvUT9iqzS/xUfG4fH4ZrBLdmtC2bdtgcl984Tmw9QQnG1YUqOJrlDwlvwqWC0Vsydtt2xNjrKsHKOyTdWvUGg0/w9I7wIG0P3jhN/ABRnrSMxurPwzp2rrunY/QMn3w0a9f+PBNC4X0NEc/CGVlPVI/7wQJHWbdZ6BzLfLPPCFDMHt0LoYY5F9yzHbvpA0QvwjyNPU/jw71uTgwK5cAAAAASUVORK5CYII="
+          alt="Sergey foto"
+          width="64"
+          height="64"
+        />
+        <h3 class="revius-item-title">Sergey Rybachok</h3>
+        <p class="revius-text">
+          Vyshyvanka Vibes exceeds all my expectations! Their vyshyvanka are
+          simply masterpieces! I fell in love with the quality of the materials
+          and the skill of the artisans behind each product. This is my favorite
+          embroidery shop where I always find something special and unique.
+        </p>
+      </li>
+      <li class="revius-item revius-hide-phone revius-hide-ipad">
+        <img
+          class="revius-foto"
+          srcset="/project-nineGreatWaysToCode/assets/customer-natalia@2x-cde6e7bb.png 2x"
+          src="/project-nineGreatWaysToCode/assets/customer-natalia-67f1f491.png"
+          alt="Natalia foto"
+          width="64"
+          height="64"
+        />
+        <h3 class="revius-item-title">Natalia Chatuk</h3>
+        <p class="revius-text">
+          Vyshyvanka Vibes is a real find for everyone who appreciates Ukrainian
+          culture. Their embroidery reflects the spirit and traditions of our
+          people. I not only buy embroidered shirts for myself, but also give
+          them to my friends abroad as a symbol of our beauty and national
+          pride.
+        </p>
+      </li>
     </ul>
-    </div>
+  </div>
 </section>
+
     </main>
 
     <!-- ====== Footer -- Oleh Zakharchenko -- Dev ====== -->
