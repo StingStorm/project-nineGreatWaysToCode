@@ -1,21 +1,39 @@
 <section class="order" id="customer-order">
+    <div class="order-bground"></div>
 <div class="container is-order">
 
 <div class="order-wrap">
-<h2 class="order-title"><span class="accent">Your order </span>is our priority: Personalized approach and quality of service</h2>
-<form name="order-form">
-    <div class="form-field">
-        <input type="text" name="user-name" class="form-info" placeholder="Enter your full name" required pattern="2"/>
-    </div>
-    <div class="form-field">
-        <input type="email" name="user-email" class="form-info" placeholder="Enter your email" required pattern="2"/>
-    </div>
-    <div class="form-field-com">
-        <textarea name="comments" class="form-comments" placeholder="Comments" required></textarea>
-    </div>
+<h2 class="order-title">
+    <span class="brand-text-accent">Your order </span>is our priority: Personalized approach and quality of service</h2>
+
+    <form name="order-form">
+        <div class="form-field">
+            <input type="text"
+            name="user-name"
+            class="form-info"
+            placeholder="Enter your full name"
+            required
+            autocapitalize="words"
+            minlength="2"
+            pattern="[a-zA-Z0-9]+"/>
+        </div>
+        <div class="form-field">
+            <input type="email"
+            name="user-email"
+            class="form-info"
+            placeholder="Enter your email"
+            required/>
+        </div>
+        <div class="form-field-com">
+            <textarea
+            name="comments"
+            class="form-comments"
+            placeholder="Comments"
+            required></textarea>
+        </div>
     <button type="submit" class="order-btn">Send
         <svg class="order-btn-icon" width="26" height="10">
-            <use href="../src/img/icons.svg#icon-arrow"></use>
+            <use href="/img/icons.svg#icon-arrow"></use>
         </svg>
     </button>
 </form>
