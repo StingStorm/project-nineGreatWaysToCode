@@ -2,6 +2,11 @@
 Hero Mobile-767
 ========================== */
 @media screen and (max-width: 767px) {
+  .section-hero {
+    padding-top: 84px;
+    padding-bottom: 40px;
+  }
+
   .container-hero {
     display: flex;
     flex-direction: column;
@@ -21,12 +26,6 @@ Hero Mobile-767
   .shell-hero {
     display: flex;
     flex-direction: column;
-  }
-
-  .box-hero-title {
-    display: block;
-    text-align: left;
-    margin-bottom: 20px;
   }
 
   .hero-title {
@@ -54,10 +53,6 @@ Hero Mobile-767
     display: block;
     font-size: 14px;
     background-color: transparent;
-  }
-
-  .arrow {
-    margin-left: 10px;
   }
 
   .hero-btn-icon {
@@ -105,12 +100,6 @@ Hero Tablet-768
     flex-direction: column;
   }
 
-  .box-hero-title {
-    display: block;
-    text-align: left;
-    margin-bottom: 40px;
-  }
-
   .hero-title {
     font-weight: 400;
     font-size: 54px;
@@ -136,10 +125,6 @@ Hero Tablet-768
     display: block;
     font-size: 16px;
     background-color: transparent;
-  }
-
-  .arrow {
-    margin-left: 10px;
   }
 
   .hero-btn-icon {
@@ -192,10 +177,6 @@ Hero Desktop-1280
     margin-left: 40px;
   }
 
-  .box-hero-title {
-    padding-top: 94px;
-  }
-
   .hero-title {
     font-size: 54px;
     line-height: 1.19;
@@ -214,10 +195,6 @@ Hero Desktop-1440
   .container-hero {
     margin-right: 100px;
     margin-left: 100px;
-  }
-
-  .box-hero-title {
-    padding-top: 66px;
   }
 
   .box-hero-promo {
