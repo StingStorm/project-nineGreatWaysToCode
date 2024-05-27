@@ -83,8 +83,8 @@
     padding-top: 17px;
     padding-bottom: 17px;
   }
-  .nav-link-header:hover,
-  .nav-link-header:focus {
+  .nav-link-header.current:hover,
+  .nav-link-header.current:focus {
     color: #ecd979;
   }
   .nav-link-header {
