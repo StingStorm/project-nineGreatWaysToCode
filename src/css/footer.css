@@ -72,12 +72,12 @@
   opacity: 1;
 }
 
-.brand-text-accent {
+.footer-text-accent {
   color: var(--primary-text-hex);
 }
 
-.brand-text-accent.visible {
-  animation: colorCycle 3s ease-in forwards;
+.footer-text-accent.visible {
+  animation: colorCycle 2s ease-in forwards;
 }
 
 @keyframes colorCycle {
