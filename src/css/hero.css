@@ -1,0 +1,143 @@
+/* =======================
+Hero Mobile-767
+========================== */
+.section-hero {
+  padding-top: 84px;
+  padding-bottom: 40px;
+}
+
+.hero-title {
+  font-weight: 400;
+  font-size: 44px;
+  line-height: 1.09;
+  letter-spacing: -0.03em;
+  color: var(--primary-text-hex);
+  margin-bottom: 20px;
+}
+
+.brand-text-accent {
+  color: #ecd979;
+}
+
+.box-hero-btn {
+  display: flex;
+  margin-bottom: 40px;
+}
+
+.hero-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-left: 70px;
+}
+
+.hero-btn-icon {
+  fill: var(--accent-color);
+}
+
+.container-hero-img {
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 767px) {
+  .box-hero-promo {
+    display: none;
+  }
+}
+
+/* =======================
+Hero Tablet-768
+========================== */
+@media screen and (min-width: 768px) {
+  .section-hero {
+    padding-top: 100px;
+    padding-bottom: 50px;
+  }
+
+  .container-hero-inform {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .shell-hero {
+    margin-right: 40px;
+  }
+
+  .hero-title {
+    font-size: 54px;
+    line-height: 1.19;
+    margin-bottom: 40px;
+  }
+
+  .box-hero-btn {
+    margin-bottom: 46px;
+  }
+
+  .hero-btn {
+    margin-left: 141px;
+  }
+
+  .box-hero-promo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    width: 115px;
+    gap: 16px;
+    padding-top: 16px;
+  }
+
+  .hero-promo-text {
+    font-size: 16px;
+    letter-spacing: -0.04em;
+    text-align: center;
+    color: rgba(252, 249, 249, 0.4);
+  }
+}
+
+/* =======================
+Hero Desktop-1280
+========================== */
+@media screen and (min-width: 1280px) {
+  .container-hero {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 40px;
+  }
+
+  .section-hero {
+    padding-bottom: 75px;
+  }
+
+  .shell-hero {
+    max-width: 518px;
+    padding-top: 94px;
+    margin-right: 115px;
+  }
+
+  .box-hero-promo {
+    padding-top: 14px;
+  }
+}
+
+/* =======================
+Hero Desktop-1440
+========================== */
+@media screen and (min-width: 1440px) {
+  .shell-hero {
+    max-width: 632px;
+    padding-top: 66px;
+    margin-right: 61px;
+  }
+
+  .hero-title {
+    font-size: 64px;
+    line-height: 1.16;
+  }
+
+  .box-hero-promo {
+    padding-top: 66px;
+  }
+}
