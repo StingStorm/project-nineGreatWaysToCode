@@ -11,6 +11,7 @@
       href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
       rel="stylesheet"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
@@ -50,27 +51,17 @@
     <!-- ====== Mobile Modal Menu -- Bohdan Haponiuk -- SCRUM ====== -->
     <load src="partials/modal-menu.html" />
 
+    <!-- ============= JavaScript ============= -->
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
     <script type="module" src="./main.js"></script>
-
-    <!-- ====== Footer script ====== -->
-    <script>
-      document.addEventListener('DOMContentLoaded', function () {
-        var observer = new IntersectionObserver(function (entries) {
-          entries.forEach(function (entry) {
-            if (entry.isIntersecting) {
-              entry.target.classList.add('visible');
-            } else {
-              entry.target.classList.remove('visible');
-            }
-          });
-        });
-
-        document
-          .querySelectorAll('.animate-on-scroll')
-          .forEach(function (element) {
-            observer.observe(element);
-          });
-      });
-    </script>
+    <script type="module" src="./js/modal.js"></script>
+    <script type="module" src="./js/IntObserver.js"></script>
   </body>
 </html>

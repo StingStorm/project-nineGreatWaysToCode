@@ -68,6 +68,7 @@ Hero Tablet-768
   }
 
   .shell-hero {
+    max-width: 549px;
     margin-right: 40px;
   }
 
