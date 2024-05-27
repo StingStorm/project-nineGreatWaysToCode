@@ -17,15 +17,16 @@
 }
 .our-collection-list {
   display: flex;
-  flex-direction: column;
   gap: 20px;
   justify-content: center;
-  align-items: center;
+}
+@media screen and (max-width: 767px) {
+  .our-collection-list {
+    flex-direction: column;
+  }
 }
 .flip-card {
-  background-color: transparent;
-  width: 335px;
-  height: 430px;
+  aspect-ratio: 335 / 430;
   perspective: 1000px;
 }
 .flip-card-inner {
@@ -35,7 +36,6 @@
   text-align: center;
   transition: transform 0.6s;
   transform-style: preserve-3d;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 .flip-card:hover .flip-card-inner {
   transform: rotateY(180deg);
@@ -57,7 +57,7 @@
   font-size: 16px;
   background-image: url(/img/ornament-bgrounds/grey-bg-ornament.png);
   background-repeat: no-repeat;
-  background-position: contain;
+  background-size: cover;
   overflow: hidden;
   cursor: pointer;
 }
@@ -68,19 +68,24 @@
     background-image: url(/img/ornament-bgrounds/grey-bg-ornament@2x.png);
   }
 }
+@media screen and (max-width: 374px) {
+  .flip-card-back {
+    padding: 20px;
+    font-size: 14px;
+  }
+}
 .our-collection-item-img-container {
   border-radius: 4px;
   overflow: hidden;
 }
 @media screen and (max-width: 767px) {
   .first-item-mob {
-    height: 400px;
+    aspect-ratio: 335 / 400;
   }
 }
 .our-collection-item-text-container {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
   gap: 8px;
   padding-top: 18px;
 }
@@ -107,14 +112,13 @@
     background-position: calc(50% - 440px) 271px;
   }
   .our-collection-list {
-    flex-direction: row;
     flex-wrap: wrap;
   }
   .our-collection-item {
     width: calc((100% - 20px) / 2);
   }
   .flip-card {
-    width: 342px;
+    aspect-ratio: 342 / 430;
   }
   .our-collection-item-title {
     font-size: 18px;
@@ -134,7 +138,7 @@
     width: calc((100% - 2 * 20px) / 3);
   }
   .flip-card {
-    width: 380px;
+    aspect-ratio: 380 / 430;
   }
 }
 @media screen and (min-width: 1440px) {
@@ -142,6 +146,6 @@
     background-position: calc(50% - 720px) 306px;
   }
   .flip-card {
-    width: 400px;
+    aspect-ratio: 400 / 430;
   }
 }
