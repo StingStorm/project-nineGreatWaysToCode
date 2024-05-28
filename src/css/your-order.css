@@ -41,6 +41,8 @@
   font-weight: 400;
   letter-spacing: -0.02em;
   transition: border 350ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  outline: 2px;
 }
 
 .form-info:focus,
@@ -51,11 +53,16 @@
 .form-comments {
   border-radius: 8px;
   height: 196px;
+  resize: none;
 }
 
 .form-info::placeholder,
 .form-comments::placeholder {
   color: rgba(252, 249, 249, 0.5);
+}
+
+.form-info:not(:placeholder-shown):invalid {
+  border-color: #a72424;
 }
 
 .form-comments:focus,
