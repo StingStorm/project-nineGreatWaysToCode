@@ -17,7 +17,8 @@
             required
             autocapitalize="words"
             minlength="2"
-            pattern="[a-zA-Z0-9]+"
+            pattern="^[a-zA-Z0-9]+( [a-zA-Z0-9]+){0,2}$"
+            title="John Fitzgerald Kennedy"
           />
         </label>
         <label class="form-field">
@@ -34,7 +35,6 @@
             name="comments"
             class="form-info form-comments"
             placeholder="Comments"
-            required
           ></textarea>
         </label>
         <button type="submit" class="order-btn main-btn">

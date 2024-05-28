@@ -51,11 +51,16 @@
 .form-comments {
   border-radius: 8px;
   height: 196px;
+  resize: none;
 }
 
 .form-info::placeholder,
 .form-comments::placeholder {
   color: rgba(252, 249, 249, 0.5);
+}
+
+.form-info:not(:placeholder-shown):invalid {
+  border-color: #a72424;
 }
 
 .form-comments:focus,
